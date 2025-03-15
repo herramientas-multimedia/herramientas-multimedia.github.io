@@ -1,0 +1,80 @@
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal de inicio */
+.inicio {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el header (logos y títulos) */
+.inicio__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.inicio__logo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.inicio__title {
+    flex: 2;
+    text-align: center;
+}
+
+.inicio__title h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.inicio__title h2 {
+    font-size: 20px;
+    font-weight: lighter;
+    color: #555;
+}
+
+/* Estilos para el contenido (secuencia, profesor y materia) */
+.inicio__content {
+    display: flex;
+    justify-content: center;
+}
+
+.inicio__info {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #e9e9e9;
+    border-radius: 8px;
+}
+
+.inicio__info p {
+    margin: 10px 0;
+}
+
+.inicio__info strong {
+    color: #6e8efb;
+}

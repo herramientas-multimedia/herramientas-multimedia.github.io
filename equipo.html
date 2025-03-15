@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Departamental 1 - Equipo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f3f3f3;
+            background-image: url('https://www.transparenttextures.com/patterns/cubes.png'); /* Textura sutil */
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logos img {
+            height: 60px;
+            margin-left: 10px;
+        }
+        .task {
+            background: #e0f7fa;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .task h2 {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+        .task p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* Estilos para ocultar el contenido al principio */
+        .task-content {
+            display: none;
+        }
+
+        /* Estilo para el icono */
+        .toggle-icon {
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+
+
+                /* Estilos para ocultar el contenido al principio */
+                .task-content {
+            display: none;
+        }
+
+        /* Estilo para el icono */
+        .toggle-icon {
+            cursor: pointer;
+            margin-left: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .rotate {
+            transform: rotate(180deg);
+        }
+        /*nuevo*/
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Departamental 1 - Equipo</h1>
+            <div class="logos">
+                <img src="./polilog.jpeg"alt="IPN">
+                <img src="./upiicsalog.jpeg" alt="UPIICSA">
+            </div>
+        </div>
+
+        <section class="task">
+            <h2 class="task-title">Tarea 1: Computación y Multimedia<svg class="toggle-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                <path d="M12 16l-8-8h16z"/>
+            </svg></h2>
+            <p class="task-description">Investigación sobre la evolución de la computación multimedia, la web en la multimedia y los formatos de imagen, video, audio y texto.</p>
+            <div class="task-content">
+            <h3>1. Evolución de la computación multimedia</h3>
+            <img src="./computacion_multimedia.jpeg" alt="Evolución de la computación multimedia" width="300">
+            <p>La computación multimedia ha evolucionado desde los años 60 con los primeros experimentos en gráficos por computadora. En los 80 y 90, el avance en hardware permitió el desarrollo de software multimedia como Flash y DirectX. En la actualidad, la multimedia es impulsada por la inteligencia artificial y la realidad virtual.</p>
+            <h3>2. La web en la multimedia</h3>
+            <img src="./web_en_multimedia.jpeg" alt="Evolución de la computación multimedia" width="300">
+            <p>La web ha cambiado la forma en que consumimos contenido multimedia. Plataformas como YouTube, Netflix y Spotify han revolucionado la distribución de video y audio. Tecnologías como HTML5, CSS3 y JavaScript permiten experiencias multimedia interactivas.</p>
+            <h3>3. Formatos de imagen, video, audio y texto</h3>
+            <img src="./imagen_audio_video.jpeg" alt="Formatos multimedia" width="300">
+            <ul>
+                <li><strong>Imagen:</strong> JPEG, PNG, GIF, SVG</li>
+                <li><strong>Video:</strong> MP4, AVI, MKV, WebM</li>
+                <li><strong>Audio:</strong> MP3, WAV, AAC, FLAC</li>
+                <li><strong>Texto:</strong> TXT, PDF, DOCX, HTML</li>
+            </ul>
+            </div>
+        </section>
+
+        <section class="task">
+            <h2 class="task-title">Tarea 2</h2>
+            <p class="task-description">Descripción breve de la tarea</p>
+        </section>
+
+        <section class="task">
+            <h2 class="task-title">Tarea 3</h2>
+            <p class="task-description">Descripción breve de la tarea</p>
+        </section>
+
+        <section class="task">
+            <h2 class="task-title">Tarea 4</h2>
+            <p class="task-description">Descripción breve de la tarea</p>
+        </section>
+
+        <section class="task">
+            <h2 class="task-title">Tarea 5</h2>
+            <p class="task-description">Descripción breve de la tarea</p>
+        </section>
+    </div>
+    <script src="./equi.js"></script>
+</body>
+</html>

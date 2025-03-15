@@ -1,0 +1,107 @@
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content, .submenu-content {
+    display: none;
+    position: absolute;
+    background: #444;
+    min-width: 200px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.submenu {
+    position: relative;
+}
+.submenu .submenu-content {
+    top: 0;
+    left: 100%;
+}
+.submenu:hover .submenu-content {
+    display: block;
+}
+/*n*/
+.navbar {
+    display: flex;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.dropdown a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    font-size: 18px;
+    transition: 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.dropdown a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    transform: scale(1.1);
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.dropdown-content a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Submenú */
+.submenu {
+    position: relative;
+}
+
+.submenu-content {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background: rgba(0, 0, 0, 0.9);
+    min-width: 180px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.submenu:hover .submenu-content,
+.submenu-content.open {
+    display: block;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.submenu-toggle {
+    cursor: pointer;
+    display: block;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+}
+
+.submenu-toggle:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Efecto de transición en hover */
+.dropdown, .submenu {
+    transition: all 0.3s ease-in-out;
+}
+
